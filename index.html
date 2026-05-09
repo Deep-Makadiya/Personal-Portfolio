@@ -1,0 +1,615 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Deep Makadiya — Python Developer specializing in AI/ML, GCP, Odoo, Django, RAG chatbots and scalable cloud applications." />
+    <meta name="keywords" content="Deep Makadiya, Python Developer, AI Engineer, Odoo Developer, Django, GCP, RAG, LangChain, Portfolio" />
+    <meta name="author" content="Deep Makadiya" />
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="Deep Makadiya — Python Developer & AI Engineer" />
+    <meta property="og:description" content="Crafting scalable Python applications, AI-powered solutions, and cloud-native experiences." />
+    <meta property="og:type" content="website" />
+
+    <title>Deep Makadiya — Python Developer &amp; AI Engineer</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css" />
+    <link rel="stylesheet" href="css/style.css?v=13" />
+
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Cdefs%3E%3ClinearGradient id='g' x1='0%25' y1='0%25' x2='100%25' y2='100%25'%3E%3Cstop offset='0%25' stop-color='%2300d4ff'/%3E%3Cstop offset='100%25' stop-color='%237c3aed'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='100' height='100' rx='22' fill='url(%23g)'/%3E%3Ctext x='50%25' y='50%25' dy='.35em' text-anchor='middle' fill='white' font-family='Arial' font-size='52' font-weight='800'%3EDM%3C/text%3E%3C/svg%3E" />
+</head>
+<body>
+    <!-- Animated Background -->
+    <div class="bg-animation">
+        <div class="bg-gradient"></div>
+        <div class="bg-grid"></div>
+        <div class="bg-orb bg-orb-1"></div>
+        <div class="bg-orb bg-orb-2"></div>
+        <div class="bg-orb bg-orb-3"></div>
+    </div>
+
+    <!-- Loading Screen -->
+    <div class="loader" id="loader">
+        <div class="loader-content">
+            <div class="loader-logo">DM</div>
+            <div class="loader-bar"><span></span></div>
+        </div>
+    </div>
+
+    <!-- Scroll Progress -->
+    <div class="scroll-progress" id="scrollProgress"></div>
+
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="#home" class="nav-link active">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#skills" class="nav-link">Skills</a></li>
+                <li><a href="#experience" class="nav-link">Experience</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="nav-actions">
+                <a href="#contact" class="btn btn-sm btn-primary nav-cta">
+                    <i class="fa-solid fa-paper-plane"></i> Hire Me
+                </a>
+                <button class="nav-toggle" id="navToggle" aria-label="Toggle Menu">
+                    <span></span><span></span><span></span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- HERO SECTION -->
+    <section class="hero" id="home">
+        <div class="container hero-container">
+            <div class="hero-content" data-aos="fade-right" data-aos-duration="1000">
+                <div class="hero-badge">
+                    <span class="status-dot"></span>
+                    Available for new opportunities
+                </div>
+
+                <h1 class="hero-title">
+                    <span class="hero-greet">Hi, I&apos;m</span>
+                    <span class="hero-name gradient-text">Deep Makadiya</span>
+                </h1>
+
+                <h2 class="hero-role">
+                    I&apos;m a <span class="typed-text" id="typedText"></span>
+                </h2>
+
+                <p class="hero-desc">
+                    Motivated Python Developer building scalable applications, cloud solutions, and
+                    AI/ML integrations. I craft <strong>RAG chatbots</strong>,
+                    <strong>Natural Language-to-SQL agents</strong>, and serverless analytics on
+                    <strong>Google Cloud Platform</strong>.
+                </p>
+
+                <div class="hero-cta">
+                    <a href="#projects" class="btn btn-primary">
+                        <span>View My Work</span>
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+                    <a href="#contact" class="btn btn-outline">
+                        <i class="fa-solid fa-message"></i>
+                        <span>Let&apos;s Talk</span>
+                    </a>
+                </div>
+
+                <div class="hero-socials">
+                    <a href="https://www.linkedin.com/in/deep-makadiya-4ab258222" target="_blank" rel="noopener" class="social-link" aria-label="LinkedIn">
+                        <i class="fa-brands fa-linkedin-in"></i>
+                    </a>
+                    <a href="https://github.com/Deep-Makadiya" target="_blank" rel="noopener" class="social-link" aria-label="GitHub">
+                        <i class="fa-brands fa-github"></i>
+                    </a>
+                    <a href="mailto:deepmakadia73@gmail.com" class="social-link" aria-label="Email">
+                        <i class="fa-solid fa-envelope"></i>
+                    </a>
+                    <a href="tel:+916353166188" class="social-link" aria-label="Phone">
+                        <i class="fa-solid fa-phone"></i>
+                    </a>
+                </div>
+            </div>
+
+            <div class="hero-visual" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="200">
+                <div class="hero-card">
+                    <div class="hero-card-glow"></div>
+                    <div class="avatar-ring">
+                        <div class="avatar-inner">
+                            <span class="avatar-initials">DM</span>
+                        </div>
+                    </div>
+
+                    <div class="floating-tech tech-1"><i class="fa-brands fa-python"></i></div>
+                    <div class="floating-tech tech-2"><i class="fa-solid fa-database"></i></div>
+                    <div class="floating-tech tech-3"><i class="fa-brands fa-google"></i></div>
+                    <div class="floating-tech tech-4"><i class="fa-solid fa-robot"></i></div>
+                    <div class="floating-tech tech-5"><i class="fa-brands fa-docker"></i></div>
+                    <div class="floating-tech tech-6"><i class="fa-brands fa-github"></i></div>
+
+                    <div class="code-snippet">
+                        <div class="code-header">
+                            <span class="dot red"></span>
+                            <span class="dot yellow"></span>
+                            <span class="dot green"></span>
+                            <span class="code-title">deep.py</span>
+                        </div>
+                        <pre><code><span class="kw">class</span> <span class="cls">Developer</span>:
+    name = <span class="str">"Deep Makadiya"</span>
+    role = <span class="str">"Python | AI"</span>
+    stack = [<span class="str">"GCP"</span>, <span class="str">"RAG"</span>,
+             <span class="str">"Odoo"</span>, <span class="str">"Django"</span>]
+    <span class="kw">def</span> <span class="fn">build</span>(self, idea):
+        <span class="kw">return</span> <span class="str">"✨ shipped"</span></code></pre>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- ABOUT SECTION -->
+    <section class="section about" id="about">
+        <div class="container">
+            <div class="section-head" data-aos="fade-up">
+                <h2 class="section-title">Who <span class="gradient-text">I Am</span></h2>
+                <p class="section-sub">A passionate developer turning complex business problems into elegant, data-driven products.</p>
+            </div>
+
+            <div class="about-grid">
+                <div class="about-text" data-aos="fade-right">
+                    <h3 class="about-heading">Building the future with Python &amp; AI</h3>
+                    <p>
+                        I&apos;m a Python Developer based in <strong>Ahmedabad, India</strong>, with hands-on experience
+                        in building scalable applications, cloud solutions, and AI/ML integrations. I have a
+                        solid foundation in Python, SQL, PostgreSQL, and modern web technologies.
+                    </p>
+                    <p>
+                        I specialize in designing and deploying applications on <strong>Google Cloud Platform (GCP)</strong>
+                        and developing AI-powered solutions like <strong>Retrieval-Augmented Generation (RAG)
+                        chatbots</strong> and <strong>Natural Language-to-SQL agents</strong>. I love translating complex
+                        business requirements into efficient, high-quality technical solutions.
+                    </p>
+
+                    <div class="about-info">
+                        <div class="info-item">
+                            <i class="fa-solid fa-user"></i>
+                            <div><span>Name</span><strong>Deep Makadiya</strong></div>
+                        </div>
+                        <div class="info-item">
+                            <i class="fa-solid fa-location-dot"></i>
+                            <div><span>Location</span><strong>Ahmedabad, India</strong></div>
+                        </div>
+                        <div class="info-item">
+                            <i class="fa-solid fa-envelope"></i>
+                            <div><span>Email</span><strong>deepmakadia73@gmail.com</strong></div>
+                        </div>
+                        <div class="info-item">
+                            <i class="fa-solid fa-briefcase"></i>
+                            <div><span>Experience</span><strong>2+ Years</strong></div>
+                        </div>
+                    </div>
+
+                    <a href="assets/Deep-Makadiya-Resume.pdf" download="Deep-Makadiya-Resume.pdf" class="btn btn-primary">
+                        <i class="fa-solid fa-download"></i>
+                        Download Resume
+                    </a>
+                </div>
+
+                <div class="about-stats" data-aos="fade-left">
+                    <div class="stat-card">
+                        <div class="stat-icon"><i class="fa-solid fa-code"></i></div>
+                        <div class="stat-num" data-target="2">0</div>
+                        <div class="stat-label">Years of Experience</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-icon"><i class="fa-solid fa-rocket"></i></div>
+                        <div class="stat-num" data-target="15">0</div>
+                        <div class="stat-label">Projects Delivered</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-icon"><i class="fa-solid fa-layer-group"></i></div>
+                        <div class="stat-num" data-target="20">0</div>
+                        <div class="stat-label">Technologies</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-icon"><i class="fa-solid fa-handshake"></i></div>
+                        <div class="stat-num" data-target="10">0</div>
+                        <div class="stat-label">Happy Clients</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SKILLS SECTION -->
+    <section class="section skills" id="skills">
+        <div class="container">
+            <div class="section-head" data-aos="fade-up">
+                <h2 class="section-title">My <span class="gradient-text">Tech Stack</span></h2>
+                <p class="section-sub">Tools and technologies I use to bring ideas to life.</p>
+            </div>
+
+            <div class="skills-grid">
+                <div class="skill-category" data-aos="fade-up" data-aos-delay="0">
+                    <div class="category-icon"><i class="fa-solid fa-code"></i></div>
+                    <h3>Programming &amp; Frameworks</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag"><i class="fa-brands fa-python"></i> Python</span>
+                        <span class="skill-tag">Django</span>
+                        <span class="skill-tag">Flask</span>
+                        <span class="skill-tag"><i class="fa-brands fa-html5"></i> HTML</span>
+                        <span class="skill-tag"><i class="fa-brands fa-css3-alt"></i> CSS</span>
+                        <span class="skill-tag">XML</span>
+                    </div>
+                </div>
+
+                <div class="skill-category" data-aos="fade-up" data-aos-delay="100">
+                    <div class="category-icon"><i class="fa-solid fa-brain"></i></div>
+                    <h3>AI / ML &amp; LLMs</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">LLMs</span>
+                        <span class="skill-tag">RAG</span>
+                        <span class="skill-tag">LangChain</span>
+                        <span class="skill-tag">Prompt Engineering</span>
+                        <span class="skill-tag">ChromaDB</span>
+                        <span class="skill-tag">NLP</span>
+                    </div>
+                </div>
+
+                <div class="skill-category" data-aos="fade-up" data-aos-delay="200">
+                    <div class="category-icon"><i class="fa-solid fa-cloud"></i></div>
+                    <h3>Cloud &amp; DevOps</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag"><i class="fa-brands fa-google"></i> Google Cloud</span>
+                        <span class="skill-tag">BigQuery</span>
+                        <span class="skill-tag">Cloud Functions</span>
+                        <span class="skill-tag">Cloud Storage</span>
+                        <span class="skill-tag">Data Studio</span>
+                        <span class="skill-tag">IAM</span>
+                    </div>
+                </div>
+
+                <div class="skill-category" data-aos="fade-up" data-aos-delay="300">
+                    <div class="category-icon"><i class="fa-solid fa-database"></i></div>
+                    <h3>Databases</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">PostgreSQL</span>
+                        <span class="skill-tag">MySQL</span>
+                        <span class="skill-tag">SQL</span>
+                        <span class="skill-tag">Query Optimization</span>
+                    </div>
+                </div>
+
+                <div class="skill-category" data-aos="fade-up" data-aos-delay="400">
+                    <div class="category-icon"><i class="fa-solid fa-cube"></i></div>
+                    <h3>Odoo &amp; ERP</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Odoo Development</span>
+                        <span class="skill-tag">Odoo Framework</span>
+                        <span class="skill-tag">ERP Customization</span>
+                        <span class="skill-tag">Workflow Automation</span>
+                        <span class="skill-tag">Report &amp; View</span>
+                    </div>
+                </div>
+
+                <div class="skill-category" data-aos="fade-up" data-aos-delay="500">
+                    <div class="category-icon"><i class="fa-solid fa-toolbox"></i></div>
+                    <h3>Tools &amp; Platforms</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag"><i class="fa-brands fa-git-alt"></i> Git</span>
+                        <span class="skill-tag"><i class="fa-brands fa-github"></i> GitHub</span>
+                        <span class="skill-tag"><i class="fa-brands fa-docker"></i> Docker</span>
+                        <span class="skill-tag">REST APIs</span>
+                        <span class="skill-tag">Bootstrap</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- EXPERIENCE SECTION -->
+    <section class="section experience" id="experience">
+        <div class="container">
+            <div class="section-head" data-aos="fade-up">
+                <h2 class="section-title">Professional <span class="gradient-text">Experience</span></h2>
+                <p class="section-sub">My career path and the milestones I&apos;ve reached.</p>
+            </div>
+
+            <div class="timeline">
+                <div class="timeline-item" data-aos="fade-up">
+                    <div class="timeline-marker">
+                        <i class="fa-solid fa-briefcase"></i>
+                    </div>
+                    <div class="timeline-content glass-card">
+                        <div class="timeline-header">
+                            <div>
+                                <h3>Python Developer</h3>
+                                <h4><i class="fa-solid fa-building"></i> Cravit India PVT. Ltd</h4>
+                            </div>
+                            <div class="timeline-meta">
+                                <span class="badge"><i class="fa-solid fa-calendar"></i> 03/2024 – Present</span>
+                                <span class="badge"><i class="fa-solid fa-location-dot"></i> Ahmedabad, Gujarat</span>
+                            </div>
+                        </div>
+                        <ul class="timeline-list">
+                            <li><i class="fa-solid fa-check"></i> Designed and deployed a responsive, high-performance business website with interactive UI/UX, optimized SEO, secure forms, and dynamic front-end components using HTML, CSS, JavaScript, Bootstrap, and modern web development best practices.</li>
+                            <li><i class="fa-solid fa-check"></i> Created a Python-based AI agent that converts natural language queries into SQL statements and returns human-readable insights, integrating with PostgreSQL/MySQL databases and using LLMs and prompt engineering techniques.</li>
+                            <li><i class="fa-solid fa-check"></i> Developed a Python- and Odoo-based healthcare management system to streamline dental treatment plans, appointment scheduling, billing, patient records, and automated reporting using PostgreSQL, REST APIs, HTML, and CSS.</li>
+                            <li><i class="fa-solid fa-check"></i> Designed and deployed a scalable serverless analytics dashboard on Google Cloud Platform with automated ETL pipelines, real-time data visualization, and IAM-based security using BigQuery, Cloud Functions, Cloud Storage, Data Studio, and Python.</li>
+                            <li><i class="fa-solid fa-check"></i> Developed an AI-powered intelligent support system using LLMs and RAG architecture to deliver context-aware responses with document ingestion, embedding retrieval, and NLP preprocessing using Python, LangChain, ChromaDB, and NLP techniques.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PROJECTS SECTION -->
+    <section class="section projects" id="projects">
+        <div class="container">
+            <div class="section-head" data-aos="fade-up">
+                <h2 class="section-title">Featured <span class="gradient-text">Projects</span></h2>
+                <p class="section-sub">A selection of work that showcases my craft.</p>
+            </div>
+
+            <div class="projects-grid">
+                <article class="project-card" data-aos="fade-up" data-aos-delay="0">
+                    <div class="project-icon-wrap">
+                        <i class="fa-solid fa-robot"></i>
+                    </div>
+                    <div class="project-meta">
+                        <span class="project-num">01</span>
+                        <span class="project-cat">AI / NL2SQL</span>
+                    </div>
+                    <h3>Natural Language to SQL Agent</h3>
+                    <p>An intelligent Python agent that converts plain English queries into optimized SQL statements and returns human-readable insights, integrating with PostgreSQL and MySQL databases.</p>
+                    <div class="project-tags">
+                        <span>Python</span><span>LLMs</span><span>PostgreSQL</span><span>MySQL</span><span>Prompt Engineering</span>
+                    </div>
+                    <div class="project-footer">
+                        <a href="#" class="project-link"><i class="fa-solid fa-arrow-up-right-from-square"></i> Live</a>
+                        <a href="https://github.com/Deep-Makadiya" target="_blank" rel="noopener" class="project-link"><i class="fa-brands fa-github"></i> Code</a>
+                    </div>
+                </article>
+
+                <article class="project-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="project-icon-wrap">
+                        <i class="fa-solid fa-comments"></i>
+                    </div>
+                    <div class="project-meta">
+                        <span class="project-num">02</span>
+                        <span class="project-cat">RAG / LLM</span>
+                    </div>
+                    <h3>AI-Powered Support System</h3>
+                    <p>An intelligent support platform built on RAG architecture delivering context-aware responses with document ingestion, embedding retrieval, and NLP preprocessing.</p>
+                    <div class="project-tags">
+                        <span>Python</span><span>LangChain</span><span>ChromaDB</span><span>RAG</span><span>NLP</span>
+                    </div>
+                    <div class="project-footer">
+                        <a href="#" class="project-link"><i class="fa-solid fa-arrow-up-right-from-square"></i> Live</a>
+                        <a href="https://github.com/Deep-Makadiya" target="_blank" rel="noopener" class="project-link"><i class="fa-brands fa-github"></i> Code</a>
+                    </div>
+                </article>
+
+                <article class="project-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="project-icon-wrap">
+                        <i class="fa-solid fa-tooth"></i>
+                    </div>
+                    <div class="project-meta">
+                        <span class="project-num">03</span>
+                        <span class="project-cat">Odoo / Healthcare</span>
+                    </div>
+                    <h3>Dental Healthcare Management</h3>
+                    <p>A complete Odoo-based healthcare system streamlining dental treatment plans, appointment scheduling, billing, patient records and automated reporting.</p>
+                    <div class="project-tags">
+                        <span>Odoo</span><span>Python</span><span>PostgreSQL</span><span>REST APIs</span><span>XML</span>
+                    </div>
+                    <div class="project-footer">
+                        <a href="#" class="project-link"><i class="fa-solid fa-arrow-up-right-from-square"></i> Live</a>
+                        <a href="https://github.com/Deep-Makadiya" target="_blank" rel="noopener" class="project-link"><i class="fa-brands fa-github"></i> Code</a>
+                    </div>
+                </article>
+
+                <article class="project-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="project-icon-wrap">
+                        <i class="fa-solid fa-chart-line"></i>
+                    </div>
+                    <div class="project-meta">
+                        <span class="project-num">04</span>
+                        <span class="project-cat">GCP / Analytics</span>
+                    </div>
+                    <h3>Serverless Analytics Dashboard</h3>
+                    <p>A scalable serverless analytics dashboard on Google Cloud with automated ETL pipelines, real-time visualizations and IAM-based security across the stack.</p>
+                    <div class="project-tags">
+                        <span>BigQuery</span><span>Cloud Functions</span><span>Cloud Storage</span><span>Data Studio</span><span>Python</span>
+                    </div>
+                    <div class="project-footer">
+                        <a href="#" class="project-link"><i class="fa-solid fa-arrow-up-right-from-square"></i> Live</a>
+                        <a href="https://github.com/Deep-Makadiya" target="_blank" rel="noopener" class="project-link"><i class="fa-brands fa-github"></i> Code</a>
+                    </div>
+                </article>
+
+                <article class="project-card" data-aos="fade-up" data-aos-delay="400">
+                    <div class="project-icon-wrap">
+                        <i class="fa-solid fa-globe"></i>
+                    </div>
+                    <div class="project-meta">
+                        <span class="project-num">05</span>
+                        <span class="project-cat">Web Development</span>
+                    </div>
+                    <h3>Responsive Business Website</h3>
+                    <p>A high-performance corporate website with interactive UI/UX, optimized SEO, secure forms and dynamic front-end components built using modern best practices.</p>
+                    <div class="project-tags">
+                        <span>HTML</span><span>CSS</span><span>JavaScript</span><span>Bootstrap</span><span>SEO</span>
+                    </div>
+                    <div class="project-footer">
+                        <a href="#" class="project-link"><i class="fa-solid fa-arrow-up-right-from-square"></i> Live</a>
+                        <a href="https://github.com/Deep-Makadiya" target="_blank" rel="noopener" class="project-link"><i class="fa-brands fa-github"></i> Code</a>
+                    </div>
+                </article>
+
+                <article class="project-card project-card-cta" data-aos="fade-up" data-aos-delay="500">
+                    <div class="cta-icon"><i class="fa-solid fa-plus"></i></div>
+                    <h3>Have a project in mind?</h3>
+                    <p>Let&apos;s collaborate and build something extraordinary together.</p>
+                    <a href="#contact" class="btn btn-outline">
+                        <i class="fa-solid fa-paper-plane"></i> Start a Project
+                    </a>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- EDUCATION SECTION -->
+    <section class="section education" id="education">
+        <div class="container">
+            <div class="section-head" data-aos="fade-up">
+                <h2 class="section-title">My <span class="gradient-text">Education</span></h2>
+                <p class="section-sub">Foundations that shaped my engineering journey.</p>
+            </div>
+
+            <div class="edu-grid">
+                <div class="edu-card glass-card" data-aos="zoom-in">
+                    <div class="edu-icon"><i class="fa-solid fa-graduation-cap"></i></div>
+                    <div class="edu-info">
+                        <span class="edu-year">2020 – 2024</span>
+                        <h3>Bachelors of Engineering</h3>
+                        <h4>Apollo Institute of Engineering and Technology</h4>
+                        <p><i class="fa-solid fa-location-dot"></i> Ahmedabad, India</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FREELANCE AVAILABILITY BANNER -->
+    <section class="freelance-banner" data-aos="zoom-in">
+        <div class="container">
+            <div class="freelance-card">
+                <div class="freelance-glow"></div>
+                <div class="freelance-content">
+                    <div class="freelance-badge">
+                        <span class="status-dot"></span>
+                        Open for projects
+                    </div>
+                    <h2>Always available for <span class="gradient-text">freelance opportunities</span></h2>
+                    <p>Have a project, a product idea, or a problem worth solving? Whether it&apos;s a Python build, an AI/RAG integration, an Odoo customization, or a cloud deployment on GCP — I&apos;m one message away.</p>
+                    <div class="freelance-cta">
+                        <a href="mailto:deepmakadia73@gmail.com?subject=Freelance%20Project%20Inquiry" class="btn btn-primary">
+                            <i class="fa-solid fa-paper-plane"></i>
+                            <span>Hire Me for a Project</span>
+                        </a>
+                        <a href="https://wa.me/916353166188?text=Hi%20Deep%2C%20I%27d%20like%20to%20discuss%20a%20freelance%20project." target="_blank" rel="noopener" class="btn btn-outline">
+                            <i class="fa-brands fa-whatsapp"></i>
+                            <span>WhatsApp Me</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="freelance-stats">
+                    <div class="freelance-stat">
+                        <div class="freelance-stat-icon"><i class="fa-solid fa-bolt"></i></div>
+                        <div>
+                            <strong>24h</strong>
+                            <span>Response time</span>
+                        </div>
+                    </div>
+                    <div class="freelance-stat">
+                        <div class="freelance-stat-icon"><i class="fa-solid fa-globe"></i></div>
+                        <div>
+                            <strong>Worldwide</strong>
+                            <span>Remote &amp; on-site</span>
+                        </div>
+                    </div>
+                    <div class="freelance-stat">
+                        <div class="freelance-stat-icon"><i class="fa-solid fa-clock"></i></div>
+                        <div>
+                            <strong>Flexible</strong>
+                            <span>Hourly · Project · Retainer</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACT SECTION -->
+    <section class="section contact" id="contact">
+        <div class="container">
+            <div class="section-head" data-aos="fade-up">
+                <h2 class="section-title">Let&apos;s <span class="gradient-text">Connect</span></h2>
+                <p class="section-sub"><strong>Always available for freelance projects</strong>, collaborations, and full-time opportunities. Reach out through any of the channels below — I&apos;ll get back within 24 hours.</p>
+            </div>
+
+            <div class="contact-info" data-aos="fade-up">
+                <div class="contact-cards">
+                    <a href="mailto:deepmakadia73@gmail.com" class="contact-card">
+                        <div class="contact-card-icon"><i class="fa-solid fa-envelope"></i></div>
+                        <div>
+                            <span>Email</span>
+                            <strong>deepmakadia73@gmail.com</strong>
+                        </div>
+                    </a>
+                    <a href="tel:+916353166188" class="contact-card">
+                        <div class="contact-card-icon"><i class="fa-solid fa-phone"></i></div>
+                        <div>
+                            <span>Phone</span>
+                            <strong>+91 6353166188</strong>
+                        </div>
+                    </a>
+                    <a href="https://www.linkedin.com/in/deep-makadiya-4ab258222" target="_blank" rel="noopener" class="contact-card">
+                        <div class="contact-card-icon"><i class="fa-brands fa-linkedin-in"></i></div>
+                        <div>
+                            <span>LinkedIn</span>
+                            <strong>deep-makadiya</strong>
+                        </div>
+                    </a>
+                    <a href="https://github.com/Deep-Makadiya" target="_blank" rel="noopener" class="contact-card">
+                        <div class="contact-card-icon"><i class="fa-brands fa-github"></i></div>
+                        <div>
+                            <span>GitHub</span>
+                            <strong>Deep-Makadiya</strong>
+                        </div>
+                    </a>
+                </div>
+
+                <a href="mailto:deepmakadia73@gmail.com" class="btn btn-primary contact-cta">
+                    <i class="fa-solid fa-paper-plane"></i>
+                    <span>Email Me Directly</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="container footer-container">
+            <div class="footer-socials">
+                <a href="https://www.linkedin.com/in/deep-makadiya-4ab258222" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+                <a href="https://github.com/Deep-Makadiya" target="_blank" rel="noopener" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+                <a href="mailto:deepmakadia73@gmail.com" aria-label="Email"><i class="fa-solid fa-envelope"></i></a>
+                <a href="tel:+916353166188" aria-label="Phone"><i class="fa-solid fa-phone"></i></a>
+            </div>
+            <div class="footer-copy">
+                <p>&copy; <span id="year"></span> Deep Makadiya. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <a href="#home" class="back-to-top" id="backToTop" aria-label="Back to top">
+        <i class="fa-solid fa-arrow-up"></i>
+    </a>
+
+    <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+    <script src="js/main.js?v=7"></script>
+</body>
+</html>
